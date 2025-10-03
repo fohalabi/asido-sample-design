@@ -1,5 +1,3 @@
-// data/timelineData.ts
-
 import { TimelineDataItem } from '../types/type';
 
 export const timelineData: TimelineDataItem[] = [
