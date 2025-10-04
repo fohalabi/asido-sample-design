@@ -7,6 +7,7 @@ interface TimelineCardProps extends TimelineEvent {
   index: number;
   isLast: boolean;
   showYear: boolean;
+  dotFilled: boolean;
 }
 
 const TimelineCard: React.FC<TimelineCardProps> = ({ 
@@ -20,7 +21,8 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
   link = false,
   index,
   isLast,
-  showYear
+  showYear,
+  dotFilled
 }) => {
   const isLeft = index % 2 !== 0;
   const [isVisible, setIsVisible] = useState(false);
@@ -52,11 +54,11 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       {/* Mobile Layout */}
       <div className={`md:hidden flex gap-6 mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="flex flex-col items-center">
-          {showYear && <div className="w-3 h-3 bg-blue-600 rounded-full flex-shrink-0"></div>}
-          {!isLast && <div className="w-0.5 flex-1 bg-gray-300 mt-2"></div>}
+          {showYear && <div className={`w-3 h-3 rounded-full flex-shrink-0 border-2 transition-colors duration-300 ${dotFilled ? 'bg-blue-600 border-blue-600' : 'bg-gray-300 border-gray-300'}`}></div>}
+          {!isLast && <div className="w-0.5 flex-1 bg-gray-400"></div>}
         </div>
         <div className="flex-1 pb-4">
-          {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4">{year}</h3>}
+          {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4 -mt-1">{year}</h3>}
           <div className="rounded-lg p-0">
             <h4 className={`${titleColor} font-semibold mb-2`}>{title}</h4>
             <p className="text-gray-800 font-medium mb-4">{subtitle}</p>
@@ -96,7 +98,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
                   {description && <p className="text-gray-600">{description}</p>}
                   
                   {imageUrl && (
-                    <div className="mt-4 w-full h-48 relative rounded-lg overflow-hidden">
+                    <div className="mt-4 w-full h-72 relative rounded-lg overflow-hidden">
                       <Image 
                         src={imageUrl}
                         alt={title}
@@ -119,8 +121,8 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
           {/* Center timeline */}
           <div className="w-2/12 flex justify-center relative">
             <div className="flex flex-col items-center">
-              {showYear && <div className="w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md z-10"></div>}
-              {!isLast && <div className="w-0.5 h-full bg-gray-300 absolute top-4"></div>}
+            {showYear && <div className={`w-4 h-4 rounded-full border-4 border-white shadow-md z-10 transition-colors duration-300 ${dotFilled ? 'bg-blue-600' : 'bg-gray-300'}`}></div>}
+              {!isLast && <div className="w-0.5 h-full bg-gray-400 absolute"></div>}
             </div>
           </div>
 
@@ -135,7 +137,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
                   {description && <p className="text-gray-600">{description}</p>}
                   
                   {imageUrl && (
-                    <div className="mt-4 w-full h-48 relative rounded-lg overflow-hidden">
+                    <div className="mt-4 w-full h-72 relative rounded-lg overflow-hidden">
                       <Image 
                         src={imageUrl}
                         alt={title}
