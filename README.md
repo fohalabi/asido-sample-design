@@ -10,7 +10,8 @@ TypeScript — type safety and maintainability
 
 Tailwind CSS — styling and responsive design
 
-Getting Started
+#Getting Started
+```
 # install dependencies
 npm install
 
@@ -23,6 +24,8 @@ npm run build
 
 # preview production build
 npm start
+
+```
 
 Project Structure
 /public         → Static assets (images, icons)
