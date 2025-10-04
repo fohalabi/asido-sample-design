@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Asido Foundation — Sample Frontend
 
-## Getting Started
+A simple frontend site for the Asido Foundation built with Next.js and TypeScript.
 
-First, run the development server:
+Tech Stack
 
-```bash
+Next.js — for routing, rendering, and build
+
+TypeScript — type safety and maintainability
+
+Tailwind CSS — styling and responsive design
+
+Getting Started
+# install dependencies
+npm install
+
+# run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# visit http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# build for production
+npm run build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# preview production build
+npm start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Project Structure
+/public         → Static assets (images, icons)
+/pages          → Next.js pages (routes)
+/components     → Reusable UI components
+/styles         → Global styles and Tailwind config
 
-## Learn More
+Approach & Decisions
 
-To learn more about Next.js, take a look at the following resources:
+Kept the design simple and clean with reusable components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Used Tailwind CSS for faster iteration and responsiveness
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Leveraged Next.js static rendering for performance and SEO
 
-## Deploy on Vercel
+Used TypeScript for safer code and easier scaling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Known Issues
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deadline pressure: Some design polish and accessibility checks were rushed due to time constraints
+
+Minor optimizations (SEO/meta tags, content flexibility) left for future improvement
+
+Would you like me to also add a short “Deployment” section (e.g., how you deployed it to Vercel) since it’s already live?
