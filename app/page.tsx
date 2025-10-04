@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import TimelineHeader from './components/Milestone/TimelineHeader';
 import MentalHealthTimeline from './components/Milestone/Timeline';
+import MentalHealthAdvocacy from './components/Stay-Informed/MentalHealthAdvocacy';
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <TimelineHeader />
-     <MentalHealthTimeline /> 
-      <h1>Contents goes here!</h1>
+      <MentalHealthTimeline /> 
+      <MentalHealthAdvocacy />
     </div>
   );
 }
