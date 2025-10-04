@@ -43,7 +43,7 @@ Leveraged Next.js static rendering for performance and SEO
 
 **Known Issues**
 
-Deadline pressure: Some design polish and accessibility checks were rushed due to time constraints
+Some design polish and accessibility checks were rushed due to time constraints
 
 Minor optimizations (SEO/meta tags, content flexibility) left for future improvement
 
