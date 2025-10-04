@@ -55,10 +55,10 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       <div className={`md:hidden flex gap-6 mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="flex flex-col items-center">
           {showYear && <div className={`w-3 h-3 rounded-full flex-shrink-0 border-2 transition-colors duration-300 ${dotFilled ? 'bg-blue-600 border-blue-600' : 'bg-gray-300 border-gray-300'}`}></div>}
-          {!isLast && <div className="w-0.5 flex-1 bg-gray-400"></div>}
+          {/* {!isLast && <div className="w-0.5 flex-1 bg-gray-400"></div>} */}
         </div>
         <div className="flex-1 pb-4">
-          {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4 -mt-1">{year}</h3>}
+          {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4 -mt-2.5">{year}</h3>}
           <div className="rounded-lg p-0">
             <h4 className={`${titleColor} font-semibold mb-2`}>{title}</h4>
             <p className="text-gray-800 font-medium mb-4">{subtitle}</p>
@@ -91,7 +91,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
           <div className={`w-5/12 ${isLeft ? '' : 'invisible'}`}>
             {isLeft && (
               <div className="pr-6 text-left">
-               {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4">{year}</h3>}
+               {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4 -mt-2">{year}</h3>}
                 <div className="rounded-lg p-0">
                   <h4 className={`${titleColor} font-semibold mb-2`}>{title}</h4>
                   <p className="text-gray-800 font-medium mb-4">{subtitle}</p>
@@ -130,7 +130,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
           <div className={`w-5/12 ${!isLeft ? '' : 'invisible'}`}>
             {!isLeft && (
               <div className="pl-6">
-                {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4">{year}</h3>}
+                {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4 -mt-2">{year}</h3>}
                 <div className="rounded-lg p-0">
                   <h4 className={`${titleColor} font-semibold mb-2`}>{title}</h4>
                   <p className="text-gray-800 font-medium mb-4">{subtitle}</p>
