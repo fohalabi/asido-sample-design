@@ -62,13 +62,13 @@ const Navbar = () => {
                     {/* Navigation */}
                     <nav className="hidden md:flex items-center space-x-8">
                         <a
-                            href="#about"
+                            href="#TimelineHeader"
                             className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
                         >
                             ABOUT US
                         </a>
                         <a
-                            href="#impact"
+                            href="#Timeline"
                             className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
                         >
                             IMPACT
@@ -80,7 +80,7 @@ const Navbar = () => {
                             GET INVOLVED
                         </a>
                         <a
-                            href="#stay-informed"
+                            href="#MentalHealth"
                             className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
                         >
                             STAY INFORMED

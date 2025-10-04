@@ -29,7 +29,7 @@ const MentalHealthTimeline: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen py-16 px-4">
+    <div className="min-h-screen py-16 px-4" id='Timeline'>
       <div className="max-w-6xl mx-auto">
 
         <div className="relative" ref={timelineRef}>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const TimelineHeader: React.FC = () => {
   return (
-    <div className="relative max-w-4xl mx-auto mb-16">
+    <div className="relative max-w-4xl mx-auto mb-16" id='TimelineHeader'>
       <h2
         className="
           m-6 p-4
