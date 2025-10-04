@@ -10,7 +10,7 @@ TypeScript — type safety and maintainability
 
 Tailwind CSS — styling and responsive design
 
-#Getting Started
+Getting Started
 ```
 # install dependencies
 npm install
@@ -31,7 +31,7 @@ Project Structure
 /public         → Static assets (images, icons)
 /pages          → Next.js pages (routes)
 /components     → Reusable UI components
-/styles         → Global styles and Tailwind config
+/styles         → Global styles and Tailwind
 
 Approach & Decisions
 
@@ -49,4 +49,3 @@ Deadline pressure: Some design polish and accessibility checks were rushed due t
 
 Minor optimizations (SEO/meta tags, content flexibility) left for future improvement
 
-Would you like me to also add a short “Deployment” section (e.g., how you deployed it to Vercel) since it’s already live?
