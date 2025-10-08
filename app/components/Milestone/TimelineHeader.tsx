@@ -6,7 +6,7 @@ const TimelineHeader: React.FC = () => {
       <h2
         className="
           m-6 p-4
-          md:mt-6 md:p-0 md:pl-12 md:border-0
+          md:mt-20 mt-16 md:p-0 md:pl-12 md:border-0
           text-based md:text-2xl font-bold text-gray-900
           text-center
           leading-relaxed

@@ -85,20 +85,20 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       </div>
 
       {/* Desktop Layout */}
-      <div className={`hidden md:block mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className={`hidden md:block mb-16`}>
         <div className="relative flex items-start">
           {/* Left content */}
           <div className={`w-5/12 ${isLeft ? '' : 'invisible'}`}>
             {isLeft && (
               <div className="pr-6 text-left">
-               {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4 -mt-2">{year}</h3>}
+               {showYear && <h3 className={`text-2xl font-bold text-blue-900 mb-4 -mt-2 transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>{year}</h3>}
                 <div className="rounded-lg p-0">
-                  <h4 className={`${titleColor} font-semibold mb-2`}>{title}</h4>
-                  <p className="text-gray-800 font-medium mb-4">{subtitle}</p>
-                  {description && <p className="text-gray-600">{description}</p>}
+                  <h4 className={`${titleColor} font-semibold mb-2 transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>{title}</h4>
+                  <p className={`text-gray-800 font-medium mb-4 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>{subtitle}</p>
+                  {description && <p className={`text-gray-600 transition-all duration-700 delay-150 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>{description}</p>}
                   
                   {imageUrl && (
-                    <div className="mt-4 w-full h-72 relative rounded-lg overflow-hidden">
+                    <div className={`mt-4 w-full h-72 relative rounded-lg overflow-hidden transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
                       <Image 
                         src={imageUrl}
                         alt={title}
@@ -109,7 +109,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
                   )}
                   
                   {link && (
-                    <button className="mt-4 text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    <button className={`mt-4 text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>
                       LEARN MORE <ArrowRight size={16} />
                     </button>
                   )}
@@ -130,14 +130,14 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
           <div className={`w-5/12 ${!isLeft ? '' : 'invisible'}`}>
             {!isLeft && (
               <div className="pl-6">
-                {showYear && <h3 className="text-2xl font-bold text-blue-900 mb-4 -mt-2">{year}</h3>}
+                {showYear && <h3 className={`text-2xl font-bold text-blue-900 mb-4 -mt-2 transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`}>{year}</h3>}
                 <div className="rounded-lg p-0">
-                  <h4 className={`${titleColor} font-semibold mb-2`}>{title}</h4>
-                  <p className="text-gray-800 font-medium mb-4">{subtitle}</p>
-                  {description && <p className="text-gray-600">{description}</p>}
+                  <h4 className={`${titleColor} font-semibold mb-2 transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`}>{title}</h4>
+                  <p className={`text-gray-800 font-medium mb-4 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`}>{subtitle}</p>
+                  {description && <p className={`text-gray-600 transition-all duration-700 delay-150 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`}>{description}</p>}
                   
                   {imageUrl && (
-                    <div className="mt-4 w-full h-72 relative rounded-lg overflow-hidden">
+                    <div className={`mt-4 w-full h-72 relative rounded-lg overflow-hidden transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
                       <Image 
                         src={imageUrl}
                         alt={title}
@@ -148,7 +148,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
                   )}
                   
                   {link && (
-                    <button className="mt-4 text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    <button className={`mt-4 text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`}>
                       LEARN MORE <ArrowRight size={16} />
                     </button>
                   )}

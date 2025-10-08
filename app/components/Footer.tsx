@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
               </div>
             </div> */}
       <Image
-        src="/ff28bca11f3093fd5c15bfb1491483e108725274.png"
+        src="/Logo+Word (1).png"
         width={160}
         height={64}
         alt="Asido Foundation Logo"
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-2">
                 <Image
-                  src="/ff28bca11f3093fd5c15bfb1491483e108725274.png"
+                  src="/Logo+Word (1).png"
                   width={160}
                   height={64}
                   alt="Asido Foundation Logo"

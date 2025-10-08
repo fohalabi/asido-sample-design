@@ -67,30 +67,39 @@ const HeroSection = () => {
               </button>
             </div>
 
+            
             {/* Mobile Menu Dropdown */}
             {isLinksMenuOpen && (
-              <div className="flex flex-col space-y-3 pb-4 border-t border-gray-200 pt-4">
+              <div className="flex flex-col space-y-3 pb-4 border-t border-gray-200 pt-4 animate-fadeIn">
                 <a 
                   href="#who-we-are" 
-                  className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
+                  className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors animate-slideInLeft"
+                  style={{ animationDelay: '0.1s' }}
+                  onClick={() => setIsLinksMenuOpen(false)}
                 >
                   WHO WE ARE
                 </a>
                 <a 
                   href="#leadership" 
-                  className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
+                  className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors animate-slideInLeft"
+                  style={{ animationDelay: '0.2s' }}
+                  onClick={() => setIsLinksMenuOpen(false)}
                 >
                   LEADERSHIP
                 </a>
                 <a 
                   href="#volunteer-team" 
-                  className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
+                  className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors animate-slideInLeft"
+                  style={{ animationDelay: '0.3s' }}
+                  onClick={() => setIsLinksMenuOpen(false)}
                 >
                   OUR VOLUNTEER TEAM
                 </a>
                 <a 
                   href="#milestones" 
-                  className="text-teal-500 font-semibold text-sm hover:text-teal-600 transition-colors"
+                  className="text-teal-500 font-semibold text-sm hover:text-teal-600 transition-colors animate-slideInLeft"
+                  style={{ animationDelay: '0.4s' }}
+                  onClick={() => setIsLinksMenuOpen(false)}
                 >
                   MILESTONES
                 </a>
